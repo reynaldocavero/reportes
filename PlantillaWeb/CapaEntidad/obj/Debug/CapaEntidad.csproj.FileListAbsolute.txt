@@ -1,0 +1,6 @@
+C:\Users\Julia\source\repos\PlantillaWeb\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Julia\source\repos\PlantillaWeb\CapaEntidad\obj\Debug\CapaEntidad.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\PlantillaWeb\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\PlantillaWeb\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaEntidad\obj\Debug\CapaEntidad.pdb

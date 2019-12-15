@@ -1,0 +1,73 @@
+create TABLE cliente(
+id int PRIMARY key AUTO_INCREMENT not null,
+nombre varchar(128) not null,
+tipDoc varchar(128) not null,
+numDoc varchar(11) not null,
+activo int not null
+);
+
+SET GLOBAL log_bin_trust_function_creators=1;
+DROP procedure IF EXISTS spListaCliente;
+DELIMITER |
+CREATE procedure spListaCliente(xml text )
+DETERMINISTIC 
+BEGIN
+/*DECLARE row_count1 INT UNSIGNED;
+DECLARE k INT UNSIGNED DEFAULT 0;
+DECLARE nom TEXT;
+DECLARE numD TEXT;
+DECLARE tipoD TEXT;
+CREATE TEMPORARY TABLE temp(tmpid int, tmpnombre varchar(128),tmptipoDoc varchar(128), tmpnumDoc varchar(128),tmpActivo int );
+SET row_count1 := extractValue(xml,'count(/Clientes/Cliente)');
+
+WHILE k < row_count1 DO        
+    SET k := k + 1;
+    SET nom := extractValue(xml,concat('/descendant-or-self::nombre[',k,']'));
+    SET numD := extractValue(xml,concat('/descendant-or-self::numDoc[',k,']'));
+    SET tipoD := extractValue(xml,concat('/descendant-or-self::tipDoc[',k,']'));
+    INSERT INTO temp(tmpid,tmpnombre,tmptipoDoc,tmpnumDoc,tmpActivo) VALUES (k,nom,tipoD,numD,1);
+   	INSERT INTO cliente(nombre,tipDoc,numDoc,activo) VALUES (nom,tipoD,numD,1);
+
+END WHILE;
+
+select tmpid as id,tmpnombre as nombre,tmpnumDoc as numDoc,tmptipoDoc as tipDoc,tmpActivo as activo from temp;*/
+select id,nombre,numDoc,tipDoc,activo from cliente;
+END;
+|
+DELIMITER ;
+
+
+
+------------------------------------------------
+SET GLOBAL log_bin_trust_function_creators=1;
+DROP procedure IF EXISTS spRegistraCliente;
+DELIMITER |
+CREATE procedure spRegistraCliente(xml text )
+DETERMINISTIC 
+BEGIN
+DECLARE row_count1 INT UNSIGNED;
+DECLARE k INT UNSIGNED DEFAULT 0;
+DECLARE nom TEXT;
+DECLARE numD TEXT;
+DECLARE tipoD TEXT;
+CREATE TEMPORARY TABLE temp(tmpid int, tmpnombre varchar(128),tmptipoDoc varchar(128), tmpnumDoc varchar(128),tmpActivo int );
+SET row_count1 := extractValue(xml,'count(/Clientes/Cliente)');
+
+WHILE k < row_count1 DO        
+    SET k := k + 1;
+    SET nom := extractValue(xml,concat('/descendant-or-self::nombre[',k,']'));
+    SET numD := extractValue(xml,concat('/descendant-or-self::numDoc[',k,']'));
+    SET tipoD := extractValue(xml,concat('/descendant-or-self::tipDoc[',k,']'));
+    INSERT INTO temp(tmpid,tmpnombre,tmptipoDoc,tmpnumDoc,tmpActivo) VALUES (k,nom,tipoD,numD,1);
+   	INSERT INTO cliente(nombre,tipDoc,numDoc,activo) VALUES (nom,tipoD,numD,1);
+
+END WHILE;
+
+select tmpid as id,tmpnombre as nombre,tmpnumDoc as numDoc,tmptipoDoc as tipDoc,tmpActivo as activo from temp;
+/*select id,nombre,numDoc,tipDoc,activo from cliente;*/
+END;
+|
+DELIMITER ;
+
+
+

@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="table table-hover">
+    <tr>
+        <td>ID</td>
+        <td>Nombre</td>
+        <td>Tipo Doc.</td>
+        <td>Numero Doc</td>
+        <td>Activo</td>
+    </tr>
+    <tbody id="listaCliente">
+
+    </tbody>
+</table>
+<button id="btnReporte">Reporte</button>
+
+
+@section scripts{
+    
+    <script>
+        /*var xml = '<Clientes>' +
+            '<Cliente>' +
+            '<nombre>' + 'maria' + '</nombre>' +
+            '<tipDoc>' + 'DNI' + '</tipDoc>' +
+            '<numDoc>' + '20202020' + '</numDoc>' +
+            '</Cliente>'+
+            '</Clientes>';
+
+
+
+
+        EMD.Documento.registrarCliente(xml);*/
+
+        $(EMD.Cliente).on("cliente.selected", function (e, data) {
+
+            var datos = {
+                id: data.clienteSeleccionado.find('td:eq(0)').html(),
+                nombre: data.clienteSeleccionado.find('td:eq(1)').html(),
+                tipDoc: data.clienteSeleccionado.find('td:eq(2)').html(),
+                numDoc: data.clienteSeleccionado.find('td:eq(3)').html(),
+                activo: data.clienteSeleccionado.find('td:eq(4)').html()
+            }
+            console.log(datos);
+
+
+            /* console.log(data.productoSeleccionado.find('td:eq(0)').html());
+             console.log(data.productoSeleccionado.find('td:eq(1)').html());
+             console.log(data.productoSeleccionado.find('td:eq(2)').html());*/
+
+
+        });
+
+
+        $("#btnReporte").on('click', function () {
+
+            EMD.Cliente.reporte();
+        });
+    </script>
+    
+}
+

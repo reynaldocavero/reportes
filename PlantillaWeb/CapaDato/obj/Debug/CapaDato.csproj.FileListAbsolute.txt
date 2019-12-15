@@ -1,0 +1,16 @@
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\CapaDato.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\CapaDato.pdb
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\CapaEntidad.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\Google.Protobuf.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\MySql.Data.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\Renci.SshNet.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\CapaEntidad.pdb
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\Google.Protobuf.xml
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\MySql.Data.xml
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\bin\Debug\Renci.SshNet.xml
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\obj\Debug\CapaDato.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\obj\Debug\CapaDato.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\obj\Debug\CapaDato.csproj.CopyComplete
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\obj\Debug\CapaDato.dll
+C:\Users\Julia\source\repos\PlantillaWeb\CapaDato\obj\Debug\CapaDato.pdb
